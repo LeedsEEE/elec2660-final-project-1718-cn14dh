@@ -16,6 +16,7 @@
 		FE28CD881FC6DAFA0011D831 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE28CD861FC6DAFA0011D831 /* LaunchScreen.storyboard */; };
 		FE28CD931FC6DAFA0011D831 /* EngineeringToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE28CD921FC6DAFA0011D831 /* EngineeringToolkitTests.m */; };
 		FE28CD9E1FC6DAFA0011D831 /* EngineeringToolkitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE28CD9D1FC6DAFA0011D831 /* EngineeringToolkitUITests.m */; };
+		FE8086771FC6E4DF00BBDA53 /* Resistor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8086761FC6E4DF00BBDA53 /* Resistor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		FE28CD991FC6DAFA0011D831 /* EngineeringToolkitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EngineeringToolkitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE28CD9D1FC6DAFA0011D831 /* EngineeringToolkitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EngineeringToolkitUITests.m; sourceTree = "<group>"; };
 		FE28CD9F1FC6DAFA0011D831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE8086751FC6E4DF00BBDA53 /* Resistor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resistor.h; sourceTree = "<group>"; };
+		FE8086761FC6E4DF00BBDA53 /* Resistor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resistor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				FE28CD791FC6DAFA0011D831 /* AppDelegate.m */,
 				FE28CD7B1FC6DAFA0011D831 /* FourBandViewController.h */,
 				FE28CD7C1FC6DAFA0011D831 /* FourBandViewController.m */,
+				FE8086751FC6E4DF00BBDA53 /* Resistor.h */,
+				FE8086761FC6E4DF00BBDA53 /* Resistor.m */,
 				FE28CD7E1FC6DAFA0011D831 /* NonInOpAmpViewController.h */,
 				FE28CD7F1FC6DAFA0011D831 /* NonInOpAmpViewController.m */,
 				FE28CD811FC6DAFA0011D831 /* Main.storyboard */,
@@ -280,6 +285,7 @@
 			files = (
 				FE28CD801FC6DAFA0011D831 /* NonInOpAmpViewController.m in Sources */,
 				FE28CD7A1FC6DAFA0011D831 /* AppDelegate.m in Sources */,
+				FE8086771FC6E4DF00BBDA53 /* Resistor.m in Sources */,
 				FE28CD7D1FC6DAFA0011D831 /* FourBandViewController.m in Sources */,
 				FE28CD771FC6DAFA0011D831 /* main.m in Sources */,
 			);
@@ -513,6 +519,7 @@
 				FE28CDA41FC6DAFA0011D831 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE28CDA51FC6DAFA0011D831 /* Build configuration list for PBXNativeTarget "EngineeringToolkitTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +528,7 @@
 				FE28CDA71FC6DAFA0011D831 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE28CDA81FC6DAFA0011D831 /* Build configuration list for PBXNativeTarget "EngineeringToolkitUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +537,7 @@
 				FE28CDAA1FC6DAFA0011D831 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
