@@ -1,22 +1,21 @@
 //
-//  Resistor.m
+//  FiveBandResistor.m
 //  EngineeringToolkit
 //
 //  Created by Daniel Heney [cn14dh] on 23/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "Resistor.h"
+#import "FiveBandResistor.h"
 
-
-@implementation Resistor
+@implementation FiveBandResistor
 
 - (id)init
 {
     self = [super init];
     if (self) {
         
-        self.numberOfBands = 3;  //set 3 band resistor by default;
+        self.numberOfBands = 4;  //set 4 band resistor by default;
         
         self.bandColorArray = [NSArray arrayWithObjects:
                                [UIColor blackColor],
@@ -33,18 +32,18 @@
                                [UIColor colorWithRed:0.76 green:0.80 blue:0.80 alpha:0.9], //silver
                                nil];
         
-            self.toleranceColorArray = [NSArray arrayWithObjects:
-                                        [UIColor brownColor],
-                                        [UIColor redColor],
-                                        [UIColor yellowColor],
-                                        [UIColor greenColor],
-                                        [UIColor blueColor],
-                                        [UIColor magentaColor],
-                                        [UIColor grayColor],
-                                        [UIColor colorWithRed:0.99 green:0.76 blue:0.0 alpha:0.9], //gold
-                                        [UIColor colorWithRed:0.76 green:0.80 blue:0.80 alpha:0.9], //silver
-                                        [UIColor clearColor],   //clear is no band
-                                        nil];
+        self.toleranceColorArray = [NSArray arrayWithObjects:
+                                    [UIColor brownColor],
+                                    [UIColor redColor],
+                                    [UIColor yellowColor],
+                                    [UIColor greenColor],
+                                    [UIColor blueColor],
+                                    [UIColor magentaColor],
+                                    [UIColor grayColor],
+                                    [UIColor colorWithRed:0.99 green:0.76 blue:0.0 alpha:0.9], //gold
+                                    [UIColor colorWithRed:0.76 green:0.80 blue:0.80 alpha:0.9], //silver
+                                    [UIColor clearColor],   //clear is no band
+                                    nil];
         
     }
     return self;
@@ -62,8 +61,8 @@
         self.multiplier = pow(10.0,self.multiplierIndex);
     }
     
-    if (self.numberOfBands == 3) {
-        self.value = (self.firstSignificantFigure*10 + self.secondSignificantFigure) * self.multiplier;
+    if (self.numberOfBands == 4) {
+        self.value = (self.firstSignificantFigure*100 + self.secondSignificantFigure*10 + _thirdSignificantFigure) * self.multiplier;
     }
     
     return _value;

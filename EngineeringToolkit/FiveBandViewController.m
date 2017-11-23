@@ -1,18 +1,18 @@
 //
-//  FirstViewController.m
-//  ResistorCalc
+//  FiveBandViewController.m
+//  EngineeringToolkit
 //
-//  Created by Daniel Heney [cn14dh] on 16/10/2017.
+//  Created by Daniel Heney [cn14dh] on 23/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "FourBandViewController.h"
+#import "FiveBandViewController.h"
 
-@interface FourBandViewController ()
+@interface FiveBandViewController ()
 
 @end
 
-@implementation FourBandViewController
+@implementation FiveBandViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,8 +21,8 @@
     self.picker.delegate = self;
     self.picker.dataSource =self;
     
-    self.resistor = [[FourBandResistor alloc] init];        //setting the resistor to 1k and printing the value
-   
+    self.resistor = [[FiveBandResistor alloc] init];        //setting the resistor to 1k and printing the value
+    
     /*  self.resistor.firstSignificantFigure = 1;
      self.resistor.secondSignificantFigure = 0;
      self.resistor.multiplierIndex = 2;
@@ -56,7 +56,7 @@
     
     UIView *band = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
     
-    if (component == 3){
+    if (component == 4){
         band.backgroundColor = [self.resistor.toleranceColorArray objectAtIndex:row];
     } else {
         band.backgroundColor = [self.resistor.bandColorArray objectAtIndex:row];
@@ -72,8 +72,9 @@
     
     self.resistor.firstSignificantFigure = [self.picker selectedRowInComponent:0];
     self.resistor.secondSignificantFigure = [self.picker selectedRowInComponent:1];
-    self.resistor.multiplierIndex = [self.picker selectedRowInComponent:2];
-    self.resistor.toleranceIndex = [self.picker selectedRowInComponent:3];
+    self.resistor.thirdSignificantFigure = [self.picker selectedRowInComponent:2];
+    self.resistor.multiplierIndex = [self.picker selectedRowInComponent:3];
+    self.resistor.toleranceIndex = [self.picker selectedRowInComponent:4];
     
     //NSLog(@"Resistor Value = %f", self.resistor.value);
     
@@ -84,7 +85,7 @@
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     
-    return 4;
+    return 5;
     
 }
 
@@ -97,9 +98,11 @@ numberOfRowsInComponent:(NSInteger)component{
         rows = 10;
     } else if (component == 1){     //second sig fig
         rows = 10;
-    } else if (component == 2){     //multiplier
+    } else if (component == 2){     //third sig fig
+        rows = 10;
+    } else if (component == 3){     //multiplier
         rows = 12;
-    } else if (component == 3){     //tolerance
+    } else if (component == 4){     //tolerance
         rows = [self.resistor.toleranceColorArray count]; //used count to set number
     }
     
@@ -107,14 +110,11 @@ numberOfRowsInComponent:(NSInteger)component{
     
 }
 
-
 - (IBAction)swapPage:(id)sender {
     UISegmentedControl *seg = sender;
-    if (seg.selectedSegmentIndex == 1)
-        [self performSegueWithIdentifier:@"fourtofive" sender:self];
+    if (seg.selectedSegmentIndex == 0)
+        [self performSegueWithIdentifier:@"fivetofour" sender:self];
     else if (seg.selectedSegmentIndex == 2)
-        [self performSegueWithIdentifier:@"fourtosix" sender:self];
+        [self performSegueWithIdentifier:@"fivetosix" sender:self];
 }
-
-
 @end

@@ -7,14 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Resistor.h"
+#import "FourBandResistor.h"
 
 @interface FourBandViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
-@property (strong, nonatomic) Resistor *resistor;
+@property (strong, nonatomic) FourBandResistor *resistor;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 @property (weak, nonatomic) IBOutlet UITextField *resistorvalue;
+
+- (IBAction)swapPage:(id)sender;
+
 
 @end
 

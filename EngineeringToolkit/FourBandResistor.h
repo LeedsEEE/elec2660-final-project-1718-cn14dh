@@ -9,8 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-
-@interface Resistor : NSObject
+@interface FourBandResistor : NSObject
 
 @property (nonatomic) double value;
 @property (nonatomic) double tolerance;
