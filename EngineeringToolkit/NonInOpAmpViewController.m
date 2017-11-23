@@ -6,13 +6,13 @@
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "NonInOpAmpViewController.h"
 
-@interface SecondViewController ()
+@interface NonInOpAmpViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation NonInOpAmpViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

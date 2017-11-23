@@ -6,13 +6,13 @@
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "FourBandViewController.h"
 
-@interface FirstViewController ()
+@interface FourBandViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation FourBandViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

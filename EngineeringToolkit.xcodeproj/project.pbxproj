@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		FE28CD771FC6DAFA0011D831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE28CD761FC6DAFA0011D831 /* main.m */; };
 		FE28CD7A1FC6DAFA0011D831 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE28CD791FC6DAFA0011D831 /* AppDelegate.m */; };
-		FE28CD7D1FC6DAFA0011D831 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE28CD7C1FC6DAFA0011D831 /* FirstViewController.m */; };
-		FE28CD801FC6DAFA0011D831 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE28CD7F1FC6DAFA0011D831 /* SecondViewController.m */; };
+		FE28CD7D1FC6DAFA0011D831 /* FourBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE28CD7C1FC6DAFA0011D831 /* FourBandViewController.m */; };
+		FE28CD801FC6DAFA0011D831 /* NonInOpAmpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE28CD7F1FC6DAFA0011D831 /* NonInOpAmpViewController.m */; };
 		FE28CD831FC6DAFA0011D831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE28CD811FC6DAFA0011D831 /* Main.storyboard */; };
 		FE28CD851FC6DAFA0011D831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE28CD841FC6DAFA0011D831 /* Assets.xcassets */; };
 		FE28CD881FC6DAFA0011D831 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE28CD861FC6DAFA0011D831 /* LaunchScreen.storyboard */; };
@@ -40,10 +40,10 @@
 		FE28CD761FC6DAFA0011D831 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE28CD781FC6DAFA0011D831 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FE28CD791FC6DAFA0011D831 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FE28CD7B1FC6DAFA0011D831 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		FE28CD7C1FC6DAFA0011D831 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		FE28CD7E1FC6DAFA0011D831 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		FE28CD7F1FC6DAFA0011D831 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		FE28CD7B1FC6DAFA0011D831 /* FourBandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourBandViewController.h; sourceTree = "<group>"; };
+		FE28CD7C1FC6DAFA0011D831 /* FourBandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourBandViewController.m; sourceTree = "<group>"; };
+		FE28CD7E1FC6DAFA0011D831 /* NonInOpAmpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NonInOpAmpViewController.h; sourceTree = "<group>"; };
+		FE28CD7F1FC6DAFA0011D831 /* NonInOpAmpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NonInOpAmpViewController.m; sourceTree = "<group>"; };
 		FE28CD821FC6DAFA0011D831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE28CD841FC6DAFA0011D831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE28CD871FC6DAFA0011D831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,10 +106,10 @@
 			children = (
 				FE28CD781FC6DAFA0011D831 /* AppDelegate.h */,
 				FE28CD791FC6DAFA0011D831 /* AppDelegate.m */,
-				FE28CD7B1FC6DAFA0011D831 /* FirstViewController.h */,
-				FE28CD7C1FC6DAFA0011D831 /* FirstViewController.m */,
-				FE28CD7E1FC6DAFA0011D831 /* SecondViewController.h */,
-				FE28CD7F1FC6DAFA0011D831 /* SecondViewController.m */,
+				FE28CD7B1FC6DAFA0011D831 /* FourBandViewController.h */,
+				FE28CD7C1FC6DAFA0011D831 /* FourBandViewController.m */,
+				FE28CD7E1FC6DAFA0011D831 /* NonInOpAmpViewController.h */,
+				FE28CD7F1FC6DAFA0011D831 /* NonInOpAmpViewController.m */,
 				FE28CD811FC6DAFA0011D831 /* Main.storyboard */,
 				FE28CD841FC6DAFA0011D831 /* Assets.xcassets */,
 				FE28CD861FC6DAFA0011D831 /* LaunchScreen.storyboard */,
@@ -278,9 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE28CD801FC6DAFA0011D831 /* SecondViewController.m in Sources */,
+				FE28CD801FC6DAFA0011D831 /* NonInOpAmpViewController.m in Sources */,
 				FE28CD7A1FC6DAFA0011D831 /* AppDelegate.m in Sources */,
-				FE28CD7D1FC6DAFA0011D831 /* FirstViewController.m in Sources */,
+				FE28CD7D1FC6DAFA0011D831 /* FourBandViewController.m in Sources */,
 				FE28CD771FC6DAFA0011D831 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
