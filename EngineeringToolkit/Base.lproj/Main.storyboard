@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -64,6 +64,7 @@
         <!--First-->
         <scene sceneID="AmI-vZ-Lp3">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uy-Es-yMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="WdA-0s-KNd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="First" image="first" id="apX-Y7-jBZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xBg-xp-ZvD">
@@ -74,7 +75,6 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="Lgn-XM-avh"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7uy-Es-yMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="279" y="-322"/>
         </scene>
@@ -141,12 +141,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="HRP-hH-mqx">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompCell" textLabel="NQ8-wu-3gc" rowHeight="90" style="IBUITableViewCellStyleDefault" id="HRP-hH-mqx">
                                 <rect key="frame" x="0.0" y="92" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HRP-hH-mqx" id="2GV-xJ-ybL">
                                     <frame key="frameInset" width="375" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NQ8-wu-3gc">
+                                            <frame key="frameInset" minX="15" width="345" height="89"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -302,8 +311,8 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xnh-6D-azH"/>
+        <segue reference="aHo-ci-X7s"/>
+        <segue reference="Lgn-XM-avh"/>
         <segue reference="TT7-yb-EEA"/>
-        <segue reference="qkY-rL-V5w"/>
     </inferredMetricsTieBreakers>
 </document>

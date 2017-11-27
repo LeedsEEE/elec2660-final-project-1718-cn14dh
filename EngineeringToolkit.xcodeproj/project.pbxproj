@@ -20,6 +20,9 @@
 		FE3D88421FC74F1E00439AA5 /* FiveBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3D88411FC74F1E00439AA5 /* FiveBandViewController.m */; };
 		FE3D88451FC7563600439AA5 /* SixBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3D88441FC7563600439AA5 /* SixBandViewController.m */; };
 		FE3D88481FC75A6A00439AA5 /* FiveBandResistor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3D88471FC75A6A00439AA5 /* FiveBandResistor.m */; };
+		FE6E46311FCC28CE00D9104C /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6E46301FCC28CE00D9104C /* DataModel.m */; };
+		FE6E46341FCC290900D9104C /* CircuitComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6E46331FCC290900D9104C /* CircuitComponent.m */; };
+		FE6E46361FCC3D1500D9104C /* resistorSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6E46351FCC3D1500D9104C /* resistorSymbol.png */; };
 		FE8086771FC6E4DF00BBDA53 /* FourBandResistor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8086761FC6E4DF00BBDA53 /* FourBandResistor.m */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +70,11 @@
 		FE3D88441FC7563600439AA5 /* SixBandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixBandViewController.m; sourceTree = "<group>"; };
 		FE3D88461FC75A6A00439AA5 /* FiveBandResistor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveBandResistor.h; sourceTree = "<group>"; };
 		FE3D88471FC75A6A00439AA5 /* FiveBandResistor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveBandResistor.m; sourceTree = "<group>"; };
+		FE6E462F1FCC28CE00D9104C /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		FE6E46301FCC28CE00D9104C /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		FE6E46321FCC290900D9104C /* CircuitComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircuitComponent.h; sourceTree = "<group>"; };
+		FE6E46331FCC290900D9104C /* CircuitComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircuitComponent.m; sourceTree = "<group>"; };
+		FE6E46351FCC3D1500D9104C /* resistorSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resistorSymbol.png; sourceTree = "<group>"; };
 		FE8086751FC6E4DF00BBDA53 /* FourBandResistor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourBandResistor.h; sourceTree = "<group>"; };
 		FE8086761FC6E4DF00BBDA53 /* FourBandResistor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourBandResistor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +145,11 @@
 				FE28CD7F1FC6DAFA0011D831 /* NonInOpAmpViewController.m */,
 				FE3D883D1FC747F500439AA5 /* TableViewController.h */,
 				FE3D883E1FC747F500439AA5 /* TableViewController.m */,
+				FE6E46351FCC3D1500D9104C /* resistorSymbol.png */,
+				FE6E46321FCC290900D9104C /* CircuitComponent.h */,
+				FE6E46331FCC290900D9104C /* CircuitComponent.m */,
+				FE6E462F1FCC28CE00D9104C /* DataModel.h */,
+				FE6E46301FCC28CE00D9104C /* DataModel.m */,
 				FE28CD841FC6DAFA0011D831 /* Assets.xcassets */,
 				FE28CD891FC6DAFA0011D831 /* Info.plist */,
 				FE28CD751FC6DAFA0011D831 /* Supporting Files */,
@@ -278,6 +291,7 @@
 			files = (
 				FE28CD881FC6DAFA0011D831 /* LaunchScreen.storyboard in Resources */,
 				FE28CD851FC6DAFA0011D831 /* Assets.xcassets in Resources */,
+				FE6E46361FCC3D1500D9104C /* resistorSymbol.png in Resources */,
 				FE28CD831FC6DAFA0011D831 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,12 +318,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3D88421FC74F1E00439AA5 /* FiveBandViewController.m in Sources */,
+				FE6E46311FCC28CE00D9104C /* DataModel.m in Sources */,
 				FE28CD801FC6DAFA0011D831 /* NonInOpAmpViewController.m in Sources */,
 				FE3D88481FC75A6A00439AA5 /* FiveBandResistor.m in Sources */,
 				FE3D88451FC7563600439AA5 /* SixBandViewController.m in Sources */,
 				FE3D883F1FC747F500439AA5 /* TableViewController.m in Sources */,
 				FE28CD7A1FC6DAFA0011D831 /* AppDelegate.m in Sources */,
 				FE8086771FC6E4DF00BBDA53 /* FourBandResistor.m in Sources */,
+				FE6E46341FCC290900D9104C /* CircuitComponent.m in Sources */,
 				FE28CD7D1FC6DAFA0011D831 /* FourBandViewController.m in Sources */,
 				FE28CD771FC6DAFA0011D831 /* main.m in Sources */,
 			);
