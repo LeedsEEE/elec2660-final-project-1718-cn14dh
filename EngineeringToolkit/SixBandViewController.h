@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SixBandResistor.h"
 
-@interface SixBandViewController : UIViewController
+@interface SixBandViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property (strong, nonatomic) SixBandResistor *resistor;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+@property (weak, nonatomic) IBOutlet UILabel *resistorvalue;
+@property (weak, nonatomic) IBOutlet UILabel *tolerancevalue;
+@property (weak, nonatomic) IBOutlet UILabel *tempcoeffvalue;
 
 - (IBAction)swapPage:(id)sender;
 

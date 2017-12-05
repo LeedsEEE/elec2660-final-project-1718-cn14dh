@@ -78,6 +78,7 @@
     //NSLog(@"Resistor Value = %f", self.resistor.value);
     
     self.resistorvalue.text = [NSString stringWithFormat:@"Resistor Value: %.2f Ω", self.resistor.value];
+    self.tolerancevalue.text = [NSString stringWithFormat:@"Tolerance: %.2f %%", self.resistor.tolerance];
 }
 
 #pragma mark Picker View Data Source Methods

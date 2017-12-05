@@ -26,4 +26,10 @@
 }
 
 
+- (IBAction)swapPage:(id)sender {
+    UISegmentedControl *seg = sender;
+    if (seg.selectedSegmentIndex == 1)
+        [self performSegueWithIdentifier:@"non2in" sender:self];
+}
+
 @end

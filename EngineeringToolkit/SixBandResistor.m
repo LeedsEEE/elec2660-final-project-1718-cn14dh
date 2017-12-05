@@ -15,7 +15,7 @@
     self = [super init];
     if (self) {
         
-        self.numberOfBands = 5;  //set 4 band resistor by default;
+        self.numberOfBands = 5;  //set 5 band resistor by default;
         
         self.bandColorArray = [NSArray arrayWithObjects:
                                [UIColor blackColor],
@@ -121,18 +121,18 @@
         self.temp = 50;
     }
     else if (self.tempIndex == 2 ) {    //orange
-        self.temp = 50;
+        self.temp = 15;
     }
     else if (self.tempIndex == 3 ) {    //yellow
-        self.temp = 50;
+        self.temp = 25;
     }
     else if (self.tempIndex == 4 ) {    //blue
-        self.temp = 50;
+        self.temp = 10;
     }
     else {
-        self.temp = 50;                 //violet
+        self.temp = 5;                 //violet
     }
-    return _temp;
+   return _temp;
 }
 
 

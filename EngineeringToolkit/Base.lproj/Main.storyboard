@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -37,15 +37,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tolerance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdD-o7-gOC">
+                                <frame key="frameInset" minX="147" minY="385" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="AdD-o7-gOC" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="1B2-Sh-Mdw"/>
                             <constraint firstItem="Vn4-49-x9C" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="KgE-U6-u2U"/>
                             <constraint firstItem="Vn4-49-x9C" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="50" id="Xvm-Ho-lta"/>
                             <constraint firstItem="bBp-bN-sxU" firstAttribute="top" secondItem="Vn4-49-x9C" secondAttribute="bottom" constant="30" id="dCp-Dd-Hyr"/>
                             <constraint firstItem="bBp-bN-sxU" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="gkd-BJ-oAf"/>
                             <constraint firstItem="X6f-hD-FPM" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="rxp-35-kuA"/>
                             <constraint firstItem="X6f-hD-FPM" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="10" id="waO-eQ-1vO"/>
+                            <constraint firstItem="AdD-o7-gOC" firstAttribute="top" secondItem="bBp-bN-sxU" secondAttribute="bottom" constant="10" id="zaA-rL-YUE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="odJ-v2-Xct"/>
@@ -53,19 +61,20 @@
                     <connections>
                         <outlet property="picker" destination="Vn4-49-x9C" id="zzB-sS-akX"/>
                         <outlet property="resistorvalue" destination="bBp-bN-sxU" id="siZ-ER-HoY"/>
+                        <outlet property="tolerancevalue" destination="AdD-o7-gOC" id="jlq-G0-c8n"/>
                         <segue destination="iXn-dY-hK2" kind="show" identifier="fourtofive" id="TT7-yb-EEA"/>
                         <segue destination="jvr-hO-1zF" kind="show" identifier="fourtosix" id="aHo-ci-X7s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="278" y="365"/>
+            <point key="canvasLocation" x="-161" y="365"/>
         </scene>
-        <!--First-->
+        <!--Resistors-->
         <scene sceneID="AmI-vZ-Lp3">
             <objects>
                 <navigationController id="WdA-0s-KNd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="apX-Y7-jBZ"/>
+                    <tabBarItem key="tabBarItem" title="Resistors" image="first" id="apX-Y7-jBZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xBg-xp-ZvD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -110,12 +119,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tolerance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="034-D0-Ica">
+                                <frame key="frameInset" minX="147" minY="386" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Jej-zJ-cbK" firstAttribute="centerX" secondItem="B8U-89-zZv" secondAttribute="centerX" id="BuI-wS-qs3"/>
                             <constraint firstItem="e3A-1Q-9P8" firstAttribute="centerX" secondItem="B8U-89-zZv" secondAttribute="centerX" id="Kjv-Ar-GPG"/>
                             <constraint firstItem="Jej-zJ-cbK" firstAttribute="top" secondItem="e3A-1Q-9P8" secondAttribute="bottom" constant="30" id="MU3-JR-ELQ"/>
+                            <constraint firstItem="034-D0-Ica" firstAttribute="top" secondItem="Jej-zJ-cbK" secondAttribute="bottom" constant="10" id="RkO-TF-nff"/>
+                            <constraint firstItem="034-D0-Ica" firstAttribute="centerX" secondItem="B8U-89-zZv" secondAttribute="centerX" id="iQx-Jy-ENe"/>
                             <constraint firstItem="2o8-CP-wC3" firstAttribute="centerX" secondItem="B8U-89-zZv" secondAttribute="centerX" id="v97-ZO-AKp"/>
                             <constraint firstItem="e3A-1Q-9P8" firstAttribute="top" secondItem="uvO-UM-Fgr" secondAttribute="bottom" constant="50" id="wmf-O1-HPI"/>
                             <constraint firstItem="2o8-CP-wC3" firstAttribute="top" secondItem="uvO-UM-Fgr" secondAttribute="bottom" constant="10" id="ynm-jw-JUH"/>
@@ -124,13 +141,14 @@
                     <connections>
                         <outlet property="picker" destination="e3A-1Q-9P8" id="8qD-v4-SFc"/>
                         <outlet property="resistorvalue" destination="Jej-zJ-cbK" id="o5Y-hF-zMw"/>
+                        <outlet property="tolerancevalue" destination="034-D0-Ica" id="2lc-OU-gOF"/>
                         <segue destination="jvr-hO-1zF" kind="show" identifier="fivetosix" id="qkY-rL-V5w"/>
                         <segue destination="9pv-A4-QxB" kind="show" identifier="fivetofour" id="xnh-6D-azH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aa6-vA-agS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-111" y="1180"/>
+            <point key="canvasLocation" x="-1116" y="1180"/>
         </scene>
         <!--Item-->
         <scene sceneID="1wV-tg-tR6">
@@ -179,7 +197,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZR-U2-eHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2425" y="365"/>
+            <point key="canvasLocation" x="2836" y="365"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SaH-pU-FUX">
@@ -197,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pyo-ee-lmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3342" y="365"/>
+            <point key="canvasLocation" x="3646" y="365"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -211,37 +229,132 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0VA-sP-hIl">
+                                <frame key="frameInset" minX="89" minY="72" width="197" height="29"/>
+                                <segments>
+                                    <segment title="Non-Inverting"/>
+                                    <segment title="Inverting"/>
+                                </segments>
+                                <connections>
+                                    <action selector="swapPage:" destination="8rJ-Kc-sve" eventType="valueChanged" id="Ace-Jl-366"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="190" misplaced="YES" placeholderIntrinsicWidth="250" placeholderIntrinsicHeight="190" image="nonInverting.png" translatesAutoresizingMaskIntoConstraints="NO" id="QsH-mq-e1M">
+                                <frame key="frameInset" minX="17" minY="130" width="340" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="caG-Jg-5pg"/>
+                                    <constraint firstAttribute="height" constant="190" id="i3K-Sx-qFq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELo-OD-K5P">
+                                <frame key="frameInset" minX="2" minY="330" width="371" height="21"/>
+                                <string key="text">http://ecetutorials.com/analog-electronics/inverting-and-non-inverting-amplifiers/</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="R2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E0c-BO-ZtE">
+                                <frame key="frameInset" minX="260" minY="457" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="R1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xTc-X8-cwK">
+                                <frame key="frameInset" minX="139" minY="457" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Av" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-IG-ZTF">
+                                <frame key="frameInset" minX="16" minY="457" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="QsH-mq-e1M" firstAttribute="top" secondItem="0VA-sP-hIl" secondAttribute="bottom" constant="30" id="58j-Vx-i9s"/>
+                            <constraint firstItem="ELo-OD-K5P" firstAttribute="top" secondItem="QsH-mq-e1M" secondAttribute="bottom" constant="10" id="7di-xJ-59A"/>
+                            <constraint firstItem="QsH-mq-e1M" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="92n-Ay-DLs"/>
+                            <constraint firstItem="0VA-sP-hIl" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="10" id="JhC-SZ-dDZ"/>
+                            <constraint firstItem="0VA-sP-hIl" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="c9w-y0-9xQ"/>
+                            <constraint firstItem="ELo-OD-K5P" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="yyn-TO-EAs"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="EK4-AL-iyk"/>
+                    <connections>
+                        <segue destination="pvn-eK-UiN" kind="show" identifier="non2in" id="KWd-Bc-7Ev"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1330" y="-322"/>
+            <point key="canvasLocation" x="828" y="364.7676161919041"/>
         </scene>
-        <!--Item-->
+        <!--In Op Amp View Controller-->
+        <scene sceneID="SbQ-7W-5Fr">
+            <objects>
+                <viewController id="pvn-eK-UiN" customClass="InOpAmpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SnX-kg-Upo"/>
+                        <viewControllerLayoutGuide type="bottom" id="4vt-Jn-7y4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="goj-Xf-PBA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="VeS-cs-u5x">
+                                <frame key="frameInset" minX="89" minY="59" width="197" height="29"/>
+                                <segments>
+                                    <segment title="Non-Inverting"/>
+                                    <segment title="Inverting"/>
+                                </segments>
+                                <connections>
+                                    <action selector="swapPage:" destination="pvn-eK-UiN" eventType="valueChanged" id="5wo-Tl-s3I"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Inverting.png" translatesAutoresizingMaskIntoConstraints="NO" id="SBd-U1-d6G">
+                                <frame key="frameInset" minX="18" minY="107" width="338" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="DVe-ky-tXv"/>
+                                    <constraint firstAttribute="width" constant="340" id="RsX-zX-ZvM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6p9-kd-l3z">
+                                <frame key="frameInset" minX="2" minY="315" width="371" height="21"/>
+                                <string key="text">http://ecetutorials.com/analog-electronics/inverting-and-non-inverting-amplifiers/</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SBd-U1-d6G" firstAttribute="top" secondItem="VeS-cs-u5x" secondAttribute="bottom" constant="30" id="TJZ-4u-rAO"/>
+                            <constraint firstItem="VeS-cs-u5x" firstAttribute="centerX" secondItem="goj-Xf-PBA" secondAttribute="centerX" id="adB-bZ-sLM"/>
+                            <constraint firstItem="6p9-kd-l3z" firstAttribute="top" secondItem="SBd-U1-d6G" secondAttribute="bottom" constant="10" id="bat-3Q-HfJ"/>
+                            <constraint firstItem="6p9-kd-l3z" firstAttribute="centerX" secondItem="goj-Xf-PBA" secondAttribute="centerX" id="cR0-IM-63C"/>
+                            <constraint firstItem="VeS-cs-u5x" firstAttribute="top" secondItem="SnX-kg-Upo" secondAttribute="bottom" constant="10" id="etq-yV-hex"/>
+                            <constraint firstItem="SBd-U1-d6G" firstAttribute="centerX" secondItem="goj-Xf-PBA" secondAttribute="centerX" id="la2-ng-7tE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="show" id="nQP-kI-rh8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lrg-uc-nCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800.8" y="364.7676161919041"/>
+        </scene>
+        <!--Formulae-->
         <scene sceneID="WTp-DU-a4h">
             <objects>
                 <navigationController id="Jr1-9F-9rW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="CvD-hp-kvL"/>
+                    <tabBarItem key="tabBarItem" title="Formulae" image="third" id="CvD-hp-kvL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mbk-MB-PG5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -253,6 +366,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txc-Uf-i1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2425" y="-322"/>
+        </scene>
+        <!--Op-Amps-->
+        <scene sceneID="Jf2-z6-Kfs">
+            <objects>
+                <navigationController id="RaK-Q6-3fY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Op-Amps" image="second" id="cKh-ma-2kr"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hdv-hA-TXv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="j0C-zZ-qIU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzS-lO-3UV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1329" y="-322"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -266,7 +396,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="WdA-0s-KNd" kind="relationship" relationship="viewControllers" id="3Nf-zK-n46"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="RaK-Q6-3fY" kind="relationship" relationship="viewControllers" id="22d-is-Zit"/>
                         <segue destination="Jr1-9F-9rW" kind="relationship" relationship="viewControllers" id="b10-0a-RIA"/>
                     </connections>
                 </tabBarController>
@@ -296,30 +426,67 @@
                                     <action selector="swapPage:" destination="jvr-hO-1zF" eventType="valueChanged" id="ZDO-tp-hFZ"/>
                                 </connections>
                             </segmentedControl>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Doq-yw-Vh8">
+                                <frame key="frameInset" minY="80" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Resistor Value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lz-UG-tDs">
+                                <frame key="frameInset" minX="131" minY="344" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tolerance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0z-xD-mzn">
+                                <frame key="frameInset" minX="148" minY="373" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Temp Coefficient:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wS-1G-DvK">
+                                <frame key="frameInset" minX="119" minY="402" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iGu-5P-n3h" firstAttribute="centerX" secondItem="Ibi-tT-Znt" secondAttribute="centerX" id="11s-zQ-iEn"/>
+                            <constraint firstItem="5lz-UG-tDs" firstAttribute="top" secondItem="Doq-yw-Vh8" secondAttribute="bottom" constant="30" id="38l-zo-53C"/>
+                            <constraint firstItem="w0z-xD-mzn" firstAttribute="centerX" secondItem="Ibi-tT-Znt" secondAttribute="centerX" id="3xA-aL-Yqc"/>
+                            <constraint firstItem="Doq-yw-Vh8" firstAttribute="top" secondItem="Krn-m1-tQw" secondAttribute="bottom" constant="50" id="7cH-LV-8AB"/>
+                            <constraint firstItem="Doq-yw-Vh8" firstAttribute="centerX" secondItem="Ibi-tT-Znt" secondAttribute="centerX" id="AIJ-Gk-2Pz"/>
+                            <constraint firstItem="1wS-1G-DvK" firstAttribute="centerX" secondItem="Ibi-tT-Znt" secondAttribute="centerX" id="BaJ-jX-irx"/>
+                            <constraint firstItem="w0z-xD-mzn" firstAttribute="top" secondItem="5lz-UG-tDs" secondAttribute="bottom" constant="10" id="D5v-5J-sNC"/>
                             <constraint firstItem="iGu-5P-n3h" firstAttribute="top" secondItem="Krn-m1-tQw" secondAttribute="bottom" constant="10" id="X0d-Zx-sZa"/>
+                            <constraint firstItem="1wS-1G-DvK" firstAttribute="top" secondItem="w0z-xD-mzn" secondAttribute="bottom" constant="10" id="cEu-Oy-b48"/>
+                            <constraint firstItem="5lz-UG-tDs" firstAttribute="centerX" secondItem="Ibi-tT-Znt" secondAttribute="centerX" id="tRA-FV-bj9"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="picker" destination="Doq-yw-Vh8" id="hIs-Kn-VTa"/>
+                        <outlet property="resistorvalue" destination="5lz-UG-tDs" id="3rO-mr-OWK"/>
+                        <outlet property="tempcoeffvalue" destination="1wS-1G-DvK" id="gll-Hb-imu"/>
+                        <outlet property="tolerancevalue" destination="w0z-xD-mzn" id="jO1-TB-CNV"/>
                         <segue destination="iXn-dY-hK2" kind="show" identifier="sixtofive" id="UHv-1I-J79"/>
                         <segue destination="9pv-A4-QxB" kind="show" identifier="sixtofour" id="9qE-2g-U8S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="20A-t8-tSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="666" y="1180"/>
+            <point key="canvasLocation" x="-162" y="1180"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Inverting.png" width="705" height="414"/>
         <image name="first" width="30" height="30"/>
+        <image name="nonInverting.png" width="570" height="445"/>
         <image name="second" width="30" height="30"/>
+        <image name="third" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Lgn-XM-avh"/>
         <segue reference="TT7-yb-EEA"/>
-        <segue reference="xnh-6D-azH"/>
         <segue reference="qkY-rL-V5w"/>
+        <segue reference="nQP-kI-rh8"/>
     </inferredMetricsTieBreakers>
 </document>

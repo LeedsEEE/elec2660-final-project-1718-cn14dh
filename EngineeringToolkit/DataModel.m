@@ -33,9 +33,9 @@
         inductor.units = @"henry, H";
         inductor.symbol =[UIImage imageNamed:@"inductorSymbol.png"];
         
-        [self.componantArray addObject: resistor];
-        [self.componantArray addObject: capacitor];
-        [self.componantArray addObject: inductor];
+        [self.componantArray addObject: resistor];  //index 0
+        [self.componantArray addObject: capacitor]; //index 1
+        [self.componantArray addObject: inductor];  //index 2
         
     }
     return self;

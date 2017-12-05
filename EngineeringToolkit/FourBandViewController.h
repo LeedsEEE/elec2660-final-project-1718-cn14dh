@@ -15,6 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 @property (weak, nonatomic) IBOutlet UILabel *resistorvalue;
+@property (weak, nonatomic) IBOutlet UILabel *tolerancevalue;
 
 - (IBAction)swapPage:(id)sender;
 
