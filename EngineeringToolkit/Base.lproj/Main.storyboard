@@ -141,17 +141,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompCell" textLabel="NQ8-wu-3gc" rowHeight="90" style="IBUITableViewCellStyleDefault" id="HRP-hH-mqx">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompCell" textLabel="NQ8-wu-3gc" detailTextLabel="HK1-3N-Jib" rowHeight="90" style="IBUITableViewCellStyleSubtitle" id="HRP-hH-mqx">
                                 <rect key="frame" x="0.0" y="92" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HRP-hH-mqx" id="2GV-xJ-ybL">
                                     <frame key="frameInset" width="375" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NQ8-wu-3gc">
-                                            <frame key="frameInset" minX="15" width="345" height="89"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="61" id="NQ8-wu-3gc">
+                                            <frame key="frameInset" minX="15" minY="27" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HK1-3N-Jib">
+                                            <frame key="frameInset" minX="15" minY="48" width="33" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -313,6 +320,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="TT7-yb-EEA"/>
         <segue reference="xnh-6D-azH"/>
-        <segue reference="aHo-ci-X7s"/>
+        <segue reference="qkY-rL-V5w"/>
     </inferredMetricsTieBreakers>
 </document>

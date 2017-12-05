@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.data = [[DataModel alloc] init];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -32,24 +34,42 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
+//return the number of sections
+    
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 5;
+// return the number of rows in the section
+    
+    NSInteger numberOfRows;
+    
+    if (section ==0) {
+        numberOfRows = self.data.componantArray.count;
+    }
+    
+    return numberOfRows;
 }
 
+#pragma mark - Config Cells
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"CompCell" forIndexPath:indexPath];
     // Configure the cell...
     
-    UIImageView *image =[[UIImageView alloc]initWithFrame:CGRectMake(2, 2, 50, 50)];
-    image.image=[UIImage imageNamed:@"resistorSymbol.png"];
-    [cell addSubview:image];
+    UIImageView *image =[[UIImageView alloc]initWithFrame:CGRectMake(200, 2, 100, 40)];
     
+    if (indexPath.section == 0) {
+        CircuitComponent *tempCC = [self.data.componantArray objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = tempCC.component;
+        cell.detailTextLabel.text = tempCC.units;
+        image.image = tempCC.symbol;
+        [cell addSubview:image];
+    }
+    
+    //image.image=[UIImage imageNamed:@"resistorSymbol.png"];
+    //[cell addSubview:image];
     
     return cell;
 }

@@ -19,19 +19,19 @@
         CircuitComponent *resistor = [[CircuitComponent alloc] init];
         resistor.component = @"Resistor";
         resistor.units = @"ohm, Ω";
-        //resistor.image =;
+        resistor.symbol = [UIImage imageNamed:@"resistorSymbol.png"];
         
         self.componantArray = [NSMutableArray array];
         CircuitComponent *capacitor = [[CircuitComponent alloc] init];
         capacitor.component = @"Capacitor";
         capacitor.units = @"farad, F";
-      //  capacitor.image =;
+        capacitor.symbol = [UIImage imageNamed:@"capacitorSymbol.png"];
         
         self.componantArray = [NSMutableArray array];
         CircuitComponent *inductor = [[CircuitComponent alloc] init];
         inductor.component = @"Inductor";
         inductor.units = @"henry, H";
-       // inductor.image =;
+        inductor.symbol =[UIImage imageNamed:@"inductorSymbol.png"];
         
         [self.componantArray addObject: resistor];
         [self.componantArray addObject: capacitor];

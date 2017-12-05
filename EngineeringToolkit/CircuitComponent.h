@@ -13,6 +13,6 @@
 
 @property (nonatomic, strong) NSString *component;
 @property (nonatomic, strong) NSString *units;
-@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) UIImage *symbol;
 
 @end

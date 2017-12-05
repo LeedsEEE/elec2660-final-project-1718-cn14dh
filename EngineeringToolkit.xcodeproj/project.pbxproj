@@ -25,6 +25,8 @@
 		FE6E46361FCC3D1500D9104C /* resistorSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6E46351FCC3D1500D9104C /* resistorSymbol.png */; };
 		FE8086771FC6E4DF00BBDA53 /* FourBandResistor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8086761FC6E4DF00BBDA53 /* FourBandResistor.m */; };
 		FE97B1F51FD6ADAE00505B69 /* SixBandResistor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97B1F41FD6ADAE00505B69 /* SixBandResistor.m */; };
+		FE97B1F71FD6BB8500505B69 /* capacitorSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = FE97B1F61FD6BB8500505B69 /* capacitorSymbol.png */; };
+		FE97B1F91FD6BBB700505B69 /* inductorSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = FE97B1F81FD6BBB700505B69 /* inductorSymbol.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		FE8086761FC6E4DF00BBDA53 /* FourBandResistor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourBandResistor.m; sourceTree = "<group>"; };
 		FE97B1F31FD6ADAE00505B69 /* SixBandResistor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixBandResistor.h; sourceTree = "<group>"; };
 		FE97B1F41FD6ADAE00505B69 /* SixBandResistor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixBandResistor.m; sourceTree = "<group>"; };
+		FE97B1F61FD6BB8500505B69 /* capacitorSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capacitorSymbol.png; sourceTree = "<group>"; };
+		FE97B1F81FD6BBB700505B69 /* inductorSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inductorSymbol.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 				FE3D883D1FC747F500439AA5 /* TableViewController.h */,
 				FE3D883E1FC747F500439AA5 /* TableViewController.m */,
 				FE6E46351FCC3D1500D9104C /* resistorSymbol.png */,
+				FE97B1F61FD6BB8500505B69 /* capacitorSymbol.png */,
+				FE97B1F81FD6BBB700505B69 /* inductorSymbol.png */,
 				FE6E46321FCC290900D9104C /* CircuitComponent.h */,
 				FE6E46331FCC290900D9104C /* CircuitComponent.m */,
 				FE6E462F1FCC28CE00D9104C /* DataModel.h */,
@@ -298,6 +304,8 @@
 				FE28CD851FC6DAFA0011D831 /* Assets.xcassets in Resources */,
 				FE6E46361FCC3D1500D9104C /* resistorSymbol.png in Resources */,
 				FE28CD831FC6DAFA0011D831 /* Main.storyboard in Resources */,
+				FE97B1F71FD6BB8500505B69 /* capacitorSymbol.png in Resources */,
+				FE97B1F91FD6BBB700505B69 /* inductorSymbol.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
