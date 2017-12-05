@@ -26,6 +26,19 @@
 }
 
 
+
+- (IBAction)findG:(id)sender {
+    
+    self.AvInput = (1+self.R1Input/self.R2Input);
+    // create a class object for op amp calcs
+}
+
+- (IBAction)findR1:(id)sender {
+}
+
+- (IBAction)findR2:(id)sender {
+}
+
 - (IBAction)swapPage:(id)sender {
     UISegmentedControl *seg = sender;
     if (seg.selectedSegmentIndex == 1)

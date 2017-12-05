@@ -10,6 +10,14 @@
 
 @interface NonInOpAmpViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *AvInput;
+@property (weak, nonatomic) IBOutlet UITextField *R1Input;
+@property (weak, nonatomic) IBOutlet UITextField *R2Input;
+
+- (IBAction)findG:(id)sender;
+- (IBAction)findR1:(id)sender;
+- (IBAction)findR2:(id)sender;
+
 - (IBAction)swapPage:(id)sender;
 
 @end
