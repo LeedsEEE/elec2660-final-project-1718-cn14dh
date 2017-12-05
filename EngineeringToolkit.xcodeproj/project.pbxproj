@@ -24,6 +24,7 @@
 		FE6E46341FCC290900D9104C /* CircuitComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6E46331FCC290900D9104C /* CircuitComponent.m */; };
 		FE6E46361FCC3D1500D9104C /* resistorSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6E46351FCC3D1500D9104C /* resistorSymbol.png */; };
 		FE8086771FC6E4DF00BBDA53 /* FourBandResistor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8086761FC6E4DF00BBDA53 /* FourBandResistor.m */; };
+		FE97B1F51FD6ADAE00505B69 /* SixBandResistor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97B1F41FD6ADAE00505B69 /* SixBandResistor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		FE6E46351FCC3D1500D9104C /* resistorSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resistorSymbol.png; sourceTree = "<group>"; };
 		FE8086751FC6E4DF00BBDA53 /* FourBandResistor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourBandResistor.h; sourceTree = "<group>"; };
 		FE8086761FC6E4DF00BBDA53 /* FourBandResistor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourBandResistor.m; sourceTree = "<group>"; };
+		FE97B1F31FD6ADAE00505B69 /* SixBandResistor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixBandResistor.h; sourceTree = "<group>"; };
+		FE97B1F41FD6ADAE00505B69 /* SixBandResistor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixBandResistor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 				FE8086761FC6E4DF00BBDA53 /* FourBandResistor.m */,
 				FE3D88461FC75A6A00439AA5 /* FiveBandResistor.h */,
 				FE3D88471FC75A6A00439AA5 /* FiveBandResistor.m */,
+				FE97B1F31FD6ADAE00505B69 /* SixBandResistor.h */,
+				FE97B1F41FD6ADAE00505B69 /* SixBandResistor.m */,
 				FE28CD7E1FC6DAFA0011D831 /* NonInOpAmpViewController.h */,
 				FE28CD7F1FC6DAFA0011D831 /* NonInOpAmpViewController.m */,
 				FE3D883D1FC747F500439AA5 /* TableViewController.h */,
@@ -317,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE97B1F51FD6ADAE00505B69 /* SixBandResistor.m in Sources */,
 				FE3D88421FC74F1E00439AA5 /* FiveBandViewController.m in Sources */,
 				FE6E46311FCC28CE00D9104C /* DataModel.m in Sources */,
 				FE28CD801FC6DAFA0011D831 /* NonInOpAmpViewController.m in Sources */,

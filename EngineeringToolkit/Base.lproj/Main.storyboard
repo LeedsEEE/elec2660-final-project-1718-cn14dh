@@ -21,12 +21,6 @@
                             <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vn4-49-x9C">
                                 <frame key="frameInset" minY="73" height="216"/>
                             </pickerView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Resistor Value" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACK-Am-mnw">
-                                <frame key="frameInset" minX="16" minY="318" width="344" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="X6f-hD-FPM">
                                 <segments>
                                     <segment title="Four Band"/>
@@ -37,13 +31,19 @@
                                     <action selector="swapPage:" destination="9pv-A4-QxB" eventType="valueChanged" id="Xox-GT-2VZ"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Resistor Value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBp-bN-sxU">
+                                <frame key="frameInset" minX="131" minY="356" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ACK-Am-mnw" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="AKK-Ch-K39"/>
-                            <constraint firstItem="ACK-Am-mnw" firstAttribute="top" secondItem="Vn4-49-x9C" secondAttribute="bottom" constant="30" id="JLY-Wa-sjN"/>
                             <constraint firstItem="Vn4-49-x9C" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="KgE-U6-u2U"/>
                             <constraint firstItem="Vn4-49-x9C" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="50" id="Xvm-Ho-lta"/>
+                            <constraint firstItem="bBp-bN-sxU" firstAttribute="top" secondItem="Vn4-49-x9C" secondAttribute="bottom" constant="30" id="dCp-Dd-Hyr"/>
+                            <constraint firstItem="bBp-bN-sxU" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="gkd-BJ-oAf"/>
                             <constraint firstItem="X6f-hD-FPM" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="rxp-35-kuA"/>
                             <constraint firstItem="X6f-hD-FPM" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="10" id="waO-eQ-1vO"/>
                         </constraints>
@@ -52,7 +52,7 @@
                     <navigationItem key="navigationItem" id="Nfy-aw-guy"/>
                     <connections>
                         <outlet property="picker" destination="Vn4-49-x9C" id="zzB-sS-akX"/>
-                        <outlet property="resistorvalue" destination="ACK-Am-mnw" id="9yV-Jr-afo"/>
+                        <outlet property="resistorvalue" destination="bBp-bN-sxU" id="siZ-ER-HoY"/>
                         <segue destination="iXn-dY-hK2" kind="show" identifier="fourtofive" id="TT7-yb-EEA"/>
                         <segue destination="jvr-hO-1zF" kind="show" identifier="fourtosix" id="aHo-ci-X7s"/>
                     </connections>
@@ -64,7 +64,6 @@
         <!--First-->
         <scene sceneID="AmI-vZ-Lp3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7uy-Es-yMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="WdA-0s-KNd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="First" image="first" id="apX-Y7-jBZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xBg-xp-ZvD">
@@ -75,6 +74,7 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="Lgn-XM-avh"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uy-Es-yMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="279" y="-322"/>
         </scene>
@@ -93,14 +93,8 @@
                             <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e3A-1Q-9P8">
                                 <frame key="frameInset" minY="91" height="216"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-zJ-cbK">
-                                <frame key="frameInset" minX="166" minY="359" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="2o8-CP-wC3">
-                                <frame key="frameInset" minX="72" minY="62" width="230" height="29"/>
+                                <frame key="frameInset" minX="72" minY="63" width="230" height="29"/>
                                 <segments>
                                     <segment title="Four Band"/>
                                     <segment title="Five Band"/>
@@ -110,6 +104,12 @@
                                     <action selector="swapPage:" destination="iXn-dY-hK2" eventType="valueChanged" id="eBs-g0-ksK"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Resistor Value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-zJ-cbK">
+                                <frame key="frameInset" minX="131" minY="357" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -311,8 +311,8 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aHo-ci-X7s"/>
-        <segue reference="Lgn-XM-avh"/>
         <segue reference="TT7-yb-EEA"/>
+        <segue reference="xnh-6D-azH"/>
+        <segue reference="aHo-ci-X7s"/>
     </inferredMetricsTieBreakers>
 </document>

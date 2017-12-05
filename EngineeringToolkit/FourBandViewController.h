@@ -14,7 +14,7 @@
 @property (strong, nonatomic) FourBandResistor *resistor;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
-@property (weak, nonatomic) IBOutlet UITextField *resistorvalue;
+@property (weak, nonatomic) IBOutlet UILabel *resistorvalue;
 
 - (IBAction)swapPage:(id)sender;
 
