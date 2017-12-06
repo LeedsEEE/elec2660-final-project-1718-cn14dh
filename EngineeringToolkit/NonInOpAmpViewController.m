@@ -29,20 +29,61 @@
 
 - (IBAction)findG:(id)sender {
     
-    //self.AvInput = (1+self.R1Input/self.R2Input);
-    // create a class object for op amp calcs
+    NSString *R1 = _R1Input.text;
+    float R1Value = [R1 floatValue];
+    NSString *R2 = _R2Input.text;
+    float R2Value = [R2 floatValue];
+    
+    float Avresult;
+    
+    Avresult = 1+R1Value/R2Value;
+    
+    self.AvInput.text = [NSString stringWithFormat:@"%f", Avresult];
+    
 }
 
 - (IBAction)findR1:(id)sender {
+    
+    NSString *Av = _AvInput.text;
+    float AvValue = [Av floatValue];
+    NSString *R2 = _R2Input.text;
+    float R2Value = [R2 floatValue];
+    
+    float R1result;
+    
+    R1result = (AvValue-1)*R2Value;
+    
+    self.R1Input.text = [NSString stringWithFormat:@"%f", R1result];
+    
 }
 
 - (IBAction)findR2:(id)sender {
+    
+    NSString *R1 = self.R1Input.text;
+    float R1Value = [R1 floatValue];
+    NSString *Av = _AvInput.text;
+    float AvValue = [Av floatValue];
+    
+    float R2result;
+    
+    R2result = ((R1Value)/(AvValue-1));
+    
+    self.R2Input.text = [NSString stringWithFormat:@"%f", R2result];
+    
 }
 
 - (IBAction)swapPage:(id)sender {
     UISegmentedControl *seg = sender;
     if (seg.selectedSegmentIndex == 1)
         [self performSegueWithIdentifier:@"non2in" sender:self];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+    
 }
 
 @end

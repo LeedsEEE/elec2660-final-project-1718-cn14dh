@@ -254,60 +254,86 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Av" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-IG-ZTF">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Av" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-IG-ZTF">
                                 <frame key="frameInset" minX="16" minY="457" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fay-Fk-8Et"/>
+                                    <constraint firstAttribute="width" constant="97" id="l8q-BE-R4b"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="o7o-pI-XWM"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="R2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E0c-BO-ZtE">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="R2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E0c-BO-ZtE">
                                 <frame key="frameInset" minX="260" minY="457" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="O9A-aH-zcn"/>
+                                    <constraint firstAttribute="width" constant="97" id="ueQ-7I-Cld"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="7up-cM-Xdw"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="R1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xTc-X8-cwK">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="R1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xTc-X8-cwK">
                                 <frame key="frameInset" minX="139" minY="457" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KSL-j9-Bf1"/>
+                                    <constraint firstAttribute="width" constant="97" id="hss-rZ-LAI"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="iyG-2M-SWI"/>
+                                </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGc-Gk-VoF">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGc-Gk-VoF">
                                 <frame key="frameInset" minX="35" minY="507" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Find Av"/>
                                 <connections>
                                     <action selector="findG:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="5D3-TW-vrN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39R-EB-pey">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39R-EB-pey">
                                 <frame key="frameInset" minX="158" minY="507" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Find R1"/>
                                 <connections>
                                     <action selector="findR1:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="fs7-hm-L9v"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1Y-Mm-pnU">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1Y-Mm-pnU">
                                 <frame key="frameInset" minX="279" minY="507" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Find R2"/>
                                 <connections>
-                                    <action selector="findR1:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="yOL-FZ-Qzn"/>
                                     <action selector="findR2:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Qa6-Ba-b1W"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="39R-EB-pey" firstAttribute="top" secondItem="xTc-X8-cwK" secondAttribute="bottom" constant="20" id="3MI-C1-f89"/>
                             <constraint firstItem="QsH-mq-e1M" firstAttribute="top" secondItem="0VA-sP-hIl" secondAttribute="bottom" constant="30" id="58j-Vx-i9s"/>
                             <constraint firstItem="ELo-OD-K5P" firstAttribute="top" secondItem="QsH-mq-e1M" secondAttribute="bottom" constant="10" id="7di-xJ-59A"/>
                             <constraint firstItem="QsH-mq-e1M" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="92n-Ay-DLs"/>
+                            <constraint firstItem="39R-EB-pey" firstAttribute="leading" secondItem="DGc-Gk-VoF" secondAttribute="trailing" constant="65" id="AoY-L0-mW9"/>
+                            <constraint firstItem="X1Y-Mm-pnU" firstAttribute="top" secondItem="E0c-BO-ZtE" secondAttribute="bottom" constant="20" id="CCD-xG-IyN"/>
+                            <constraint firstItem="E0c-BO-ZtE" firstAttribute="top" secondItem="QsH-mq-e1M" secondAttribute="bottom" constant="140" id="D7t-3m-UMX"/>
+                            <constraint firstItem="39R-EB-pey" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="DhY-ff-hPG"/>
+                            <constraint firstItem="E0c-BO-ZtE" firstAttribute="leading" secondItem="xTc-X8-cwK" secondAttribute="trailing" constant="25" id="JfO-yb-KeZ"/>
                             <constraint firstItem="0VA-sP-hIl" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="10" id="JhC-SZ-dDZ"/>
+                            <constraint firstItem="f3b-IG-ZTF" firstAttribute="top" secondItem="QsH-mq-e1M" secondAttribute="bottom" constant="140" id="UCE-TP-ahv"/>
+                            <constraint firstItem="X1Y-Mm-pnU" firstAttribute="leading" secondItem="39R-EB-pey" secondAttribute="trailing" constant="65" id="Xkc-tK-htm"/>
                             <constraint firstItem="0VA-sP-hIl" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="c9w-y0-9xQ"/>
+                            <constraint firstItem="xTc-X8-cwK" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="f4i-BE-tFk"/>
+                            <constraint firstItem="xTc-X8-cwK" firstAttribute="leading" secondItem="f3b-IG-ZTF" secondAttribute="trailing" constant="25" id="kaZ-eI-epv"/>
+                            <constraint firstItem="DGc-Gk-VoF" firstAttribute="top" secondItem="f3b-IG-ZTF" secondAttribute="bottom" constant="20" id="mAG-Ws-bLR"/>
+                            <constraint firstItem="xTc-X8-cwK" firstAttribute="top" secondItem="QsH-mq-e1M" secondAttribute="bottom" constant="140" id="v42-Vm-iTT"/>
                             <constraint firstItem="ELo-OD-K5P" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="yyn-TO-EAs"/>
                         </constraints>
                     </view>

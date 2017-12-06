@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NonInOpAmpViewController : UIViewController
+@interface NonInOpAmpViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *AvInput;
 @property (weak, nonatomic) IBOutlet UITextField *R1Input;
