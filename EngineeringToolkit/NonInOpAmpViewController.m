@@ -29,7 +29,7 @@
 
 - (IBAction)findG:(id)sender {
     
-    self.AvInput = (1+self.R1Input/self.R2Input);
+    //self.AvInput = (1+self.R1Input/self.R2Input);
     // create a class object for op amp calcs
 }
 

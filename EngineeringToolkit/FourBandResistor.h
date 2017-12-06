@@ -25,7 +25,7 @@
 
 @property (nonatomic,strong) NSArray *bandColorArray;
 @property (nonatomic,strong) NSArray *toleranceColorArray;
-@property (nonatomic,strong) NSArray *E24Array;
+//@property (nonatomic,strong) NSArray *E24Array;
 
 -(double) value;
 -(double) tolerance;
