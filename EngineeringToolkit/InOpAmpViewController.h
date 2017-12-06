@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InOpAmpViewController : UIViewController
+@interface InOpAmpViewController : UIViewController <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *AvInput;
+@property (weak, nonatomic) IBOutlet UITextField *RiInput;
+@property (weak, nonatomic) IBOutlet UITextField *RfInput;
+
+- (IBAction)findG:(id)sender;
+- (IBAction)findRi:(id)sender;
+- (IBAction)findRf:(id)sender;
 
 - (IBAction)swapPage:(id)sender;
 

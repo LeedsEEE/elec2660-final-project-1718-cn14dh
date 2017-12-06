@@ -24,19 +24,63 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)findG:(id)sender {
+    
+    NSString *Ri = _RiInput.text;
+    float RiValue = [Ri floatValue];
+    NSString *Rf = _RfInput.text;
+    float RfValue = [Rf floatValue];
+    
+    float Avresult;
+    
+    Avresult = -(RfValue/RiValue);
+    
+    self.AvInput.text = [NSString stringWithFormat:@"%f", Avresult];
+    
 }
-*/
+
+- (IBAction)findRi:(id)sender {
+    
+    NSString *Av = _AvInput.text;
+    float AvValue = [Av floatValue];
+    NSString *Rf = _RfInput.text;
+    float RfValue = [Rf floatValue];
+    
+    float Riresult;
+    
+    Riresult = -(RfValue/AvValue);
+    
+    self.RiInput.text = [NSString stringWithFormat:@"%f", Riresult];
+    
+}
+
+- (IBAction)findRf:(id)sender {
+    
+    NSString *Av = _AvInput.text;
+    float AvValue = [Av floatValue];
+    NSString *Ri = _RiInput.text;
+    float RiValue = [Ri floatValue];
+    
+    float Rfresult;
+    
+    Rfresult = -(AvValue*RiValue);
+    
+    self.RfInput.text = [NSString stringWithFormat:@"%f", Rfresult];
+    
+}
 
 - (IBAction)swapPage:(id)sender {
     UISegmentedControl *seg = sender;
     if (seg.selectedSegmentIndex == 0)
         [self performSegueWithIdentifier:@"in2non" sender:self];
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+    
+}
+
 @end
