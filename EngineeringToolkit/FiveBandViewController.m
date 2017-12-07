@@ -37,7 +37,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark Picker View Delegate Methods
+#pragma mark - Picker View Delegate Methods
 
 /* - (NSString *)pickerView:(UIPickerView *)pickerView
  titleForRow:(NSInteger)row
@@ -72,7 +72,7 @@
     
     self.resistor.firstSignificantFigure = [self.picker selectedRowInComponent:0];
     self.resistor.secondSignificantFigure = [self.picker selectedRowInComponent:1];
-    self.resistor.thirdSignificantFigure = [self.picker selectedRowInComponent:2];
+    self.resistor.thirdSignificantFigure = [self.picker selectedRowInComponent:2];      //now define 3rd picker value as third sig fig
     self.resistor.multiplierIndex = [self.picker selectedRowInComponent:3];
     self.resistor.toleranceIndex = [self.picker selectedRowInComponent:4];
     
@@ -82,7 +82,7 @@
     self.tolerancevalue.text = [NSString stringWithFormat:@"Tolerance: %.2f %%", self.resistor.tolerance];
 }
 
-#pragma mark Picker View Data Source Methods
+#pragma mark - Picker View Data Source Methods
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     
@@ -111,9 +111,11 @@ numberOfRowsInComponent:(NSInteger)component{
     
 }
 
+#pragma mark - Segue Between Resistors
+
 - (IBAction)swapPage:(id)sender {
     UISegmentedControl *seg = sender;
-    if (seg.selectedSegmentIndex == 0)
+    if (seg.selectedSegmentIndex == 0)              //https://stackoverflow.com/questions/8728968/how-do-i-segue-to-2-views-based-on-a-segmented-control-and-an-add-button
         [self performSegueWithIdentifier:@"fivetofour" sender:self];
     else if (seg.selectedSegmentIndex == 2)
         [self performSegueWithIdentifier:@"fivetosix" sender:self];

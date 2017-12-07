@@ -24,6 +24,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Buttons Pressed
+
 - (IBAction)findG:(id)sender {
     
     NSString *Ri = _RiInput.text;
@@ -35,6 +37,7 @@
     
     Avresult = -(RfValue/RiValue);
     
+    //NSLog(@"Av Value = %f", Avresult);
     self.AvInput.text = [NSString stringWithFormat:@"%f", Avresult];
     
 }
@@ -50,6 +53,7 @@
     
     Riresult = -(RfValue/AvValue);
     
+    //NSLog(@"Ri Value = %f", Riresult);
     self.RiInput.text = [NSString stringWithFormat:@"%f", Riresult];
     
 }
@@ -65,9 +69,12 @@
     
     Rfresult = -(AvValue*RiValue);
     
+    //NSLog(@"Rf Value = %f", Rfresult);
     self.RfInput.text = [NSString stringWithFormat:@"%f", Rfresult];
     
 }
+
+#pragma mark - segue Settings
 
 - (IBAction)swapPage:(id)sender {
     UISegmentedControl *seg = sender;
@@ -75,9 +82,11 @@
         [self performSegueWithIdentifier:@"in2non" sender:self];
 }
 
+#pragma mark - Keypad Settings
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     
-    [textField resignFirstResponder];
+    [textField resignFirstResponder]; //when return is pressed the keyboard is minimised
     
     return YES;
     

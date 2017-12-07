@@ -10,10 +10,12 @@
 
 @implementation FiveBandResistor
 
-- (id)init
+- (id)init          //based on Dr Craig Evans resistor class file from lab
 {
     self = [super init];
     if (self) {
+        
+        #pragma mark - arrays
         
         self.numberOfBands = 4;  //set 4 band resistor by default;
         
@@ -48,6 +50,8 @@
     }
     return self;
 }
+
+#pragma mark - Setting Values
 
 -(double) value {
     

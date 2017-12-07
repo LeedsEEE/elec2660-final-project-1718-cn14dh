@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		FE076AFD1FD730B600A58931 /* Inverting.png in Resources */ = {isa = PBXBuildFile; fileRef = FE076AFC1FD730B600A58931 /* Inverting.png */; };
 		FE076AFF1FD730BA00A58931 /* nonInverting.png in Resources */ = {isa = PBXBuildFile; fileRef = FE076AFE1FD730BA00A58931 /* nonInverting.png */; };
+		FE1727951FD9562D00CD8987 /* voltmeterSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1727941FD9562D00CD8987 /* voltmeterSymbol.png */; };
+		FE1727971FD9563800CD8987 /* switchSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1727961FD9563800CD8987 /* switchSymbol.png */; };
+		FE1727991FD9563D00CD8987 /* ampmeterSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1727981FD9563D00CD8987 /* ampmeterSymbol.png */; };
+		FE17279D1FD9576800CD8987 /* opAmpSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = FE17279C1FD9576800CD8987 /* opAmpSymbol.png */; };
+		FE17279F1FD9588D00CD8987 /* diodeSymbol2.png in Resources */ = {isa = PBXBuildFile; fileRef = FE17279E1FD9588D00CD8987 /* diodeSymbol2.png */; };
+		FE1727A11FD95B7100CD8987 /* resistorTab.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1727A01FD95B7100CD8987 /* resistorTab.png */; settings = {ASSET_TAGS = ("<div>Icons made by <a href=\"http://www.freepik.com\" title=\"Freepik\">Freepik</a> from <a href=\"https://www.flaticon.com/\" title=\"Flaticon\">www.flaticon.com</a> is licensed by <a href=\"http://creativecommons.org/licenses/by/3.0/\" title=\"Creative Commons BY 3.0\" target=\"_blank\">CC 3.0 BY</a></div>", ); }; };
 		FE28CD771FC6DAFA0011D831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE28CD761FC6DAFA0011D831 /* main.m */; };
 		FE28CD7A1FC6DAFA0011D831 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE28CD791FC6DAFA0011D831 /* AppDelegate.m */; };
 		FE28CD7D1FC6DAFA0011D831 /* FourBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE28CD7C1FC6DAFA0011D831 /* FourBandViewController.m */; };
@@ -52,6 +58,12 @@
 /* Begin PBXFileReference section */
 		FE076AFC1FD730B600A58931 /* Inverting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Inverting.png; sourceTree = "<group>"; };
 		FE076AFE1FD730BA00A58931 /* nonInverting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nonInverting.png; sourceTree = "<group>"; };
+		FE1727941FD9562D00CD8987 /* voltmeterSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voltmeterSymbol.png; sourceTree = "<group>"; };
+		FE1727961FD9563800CD8987 /* switchSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchSymbol.png; sourceTree = "<group>"; };
+		FE1727981FD9563D00CD8987 /* ampmeterSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ampmeterSymbol.png; sourceTree = "<group>"; };
+		FE17279C1FD9576800CD8987 /* opAmpSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opAmpSymbol.png; sourceTree = "<group>"; };
+		FE17279E1FD9588D00CD8987 /* diodeSymbol2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diodeSymbol2.png; sourceTree = "<group>"; };
+		FE1727A01FD95B7100CD8987 /* resistorTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resistorTab.png; sourceTree = "<group>"; };
 		FE28CD721FC6DAFA0011D831 /* EngineeringToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngineeringToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE28CD761FC6DAFA0011D831 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE28CD781FC6DAFA0011D831 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -161,17 +173,23 @@
 				FE28CD7F1FC6DAFA0011D831 /* NonInOpAmpViewController.m */,
 				FE6156011FD73C3300C57735 /* InOpAmpViewController.h */,
 				FE6156021FD73C3300C57735 /* InOpAmpViewController.m */,
-				FE076AFC1FD730B600A58931 /* Inverting.png */,
-				FE076AFE1FD730BA00A58931 /* nonInverting.png */,
 				FE3D883D1FC747F500439AA5 /* TableViewController.h */,
 				FE3D883E1FC747F500439AA5 /* TableViewController.m */,
-				FE6E46351FCC3D1500D9104C /* resistorSymbol.png */,
-				FE97B1F61FD6BB8500505B69 /* capacitorSymbol.png */,
-				FE97B1F81FD6BBB700505B69 /* inductorSymbol.png */,
 				FE6E46321FCC290900D9104C /* CircuitComponent.h */,
 				FE6E46331FCC290900D9104C /* CircuitComponent.m */,
 				FE6E462F1FCC28CE00D9104C /* DataModel.h */,
 				FE6E46301FCC28CE00D9104C /* DataModel.m */,
+				FE076AFC1FD730B600A58931 /* Inverting.png */,
+				FE076AFE1FD730BA00A58931 /* nonInverting.png */,
+				FE6E46351FCC3D1500D9104C /* resistorSymbol.png */,
+				FE97B1F61FD6BB8500505B69 /* capacitorSymbol.png */,
+				FE97B1F81FD6BBB700505B69 /* inductorSymbol.png */,
+				FE1727961FD9563800CD8987 /* switchSymbol.png */,
+				FE1727A01FD95B7100CD8987 /* resistorTab.png */,
+				FE17279E1FD9588D00CD8987 /* diodeSymbol2.png */,
+				FE1727941FD9562D00CD8987 /* voltmeterSymbol.png */,
+				FE1727981FD9563D00CD8987 /* ampmeterSymbol.png */,
+				FE17279C1FD9576800CD8987 /* opAmpSymbol.png */,
 				FE28CD841FC6DAFA0011D831 /* Assets.xcassets */,
 				FE28CD891FC6DAFA0011D831 /* Info.plist */,
 				FE28CD751FC6DAFA0011D831 /* Supporting Files */,
@@ -267,6 +285,9 @@
 		FE28CD6A1FC6DAFA0011D831 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					"<div>Icons made by <a href=\"http://www.freepik.com\" title=\"Freepik\">Freepik</a> from <a href=\"https://www.flaticon.com/\" title=\"Flaticon\">www.flaticon.com</a> is licensed by <a href=\"http://creativecommons.org/licenses/by/3.0/\" title=\"Creative Commons BY 3.0\" target=\"_blank\">CC 3.0 BY</a></div>",
+				);
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "University of Leeds";
 				TargetAttributes = {
@@ -313,10 +334,16 @@
 			files = (
 				FE28CD881FC6DAFA0011D831 /* LaunchScreen.storyboard in Resources */,
 				FE28CD851FC6DAFA0011D831 /* Assets.xcassets in Resources */,
+				FE17279F1FD9588D00CD8987 /* diodeSymbol2.png in Resources */,
 				FE6E46361FCC3D1500D9104C /* resistorSymbol.png in Resources */,
 				FE28CD831FC6DAFA0011D831 /* Main.storyboard in Resources */,
 				FE076AFF1FD730BA00A58931 /* nonInverting.png in Resources */,
 				FE076AFD1FD730B600A58931 /* Inverting.png in Resources */,
+				FE1727951FD9562D00CD8987 /* voltmeterSymbol.png in Resources */,
+				FE17279D1FD9576800CD8987 /* opAmpSymbol.png in Resources */,
+				FE1727991FD9563D00CD8987 /* ampmeterSymbol.png in Resources */,
+				FE1727A11FD95B7100CD8987 /* resistorTab.png in Resources */,
+				FE1727971FD9563800CD8987 /* switchSymbol.png in Resources */,
 				FE97B1F71FD6BB8500505B69 /* capacitorSymbol.png in Resources */,
 				FE97B1F91FD6BBB700505B69 /* inductorSymbol.png in Resources */,
 			);

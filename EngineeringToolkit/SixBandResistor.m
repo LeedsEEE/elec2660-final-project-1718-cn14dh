@@ -10,10 +10,12 @@
 
 @implementation SixBandResistor
 
-- (id)init
+- (id)init          //based on Dr Craig Evans resistor class file from lab
 {
     self = [super init];
     if (self) {
+        
+        #pragma mark - arrays
         
         self.numberOfBands = 5;  //set 5 band resistor by default;
         
@@ -45,7 +47,7 @@
                                     [UIColor clearColor],   //clear is no band
                                     nil];
        
-        self.tempArray = [NSArray arrayWithObjects:
+        self.tempArray = [NSArray arrayWithObjects: //new array with avalible colours for temp
                           [UIColor brownColor],
                           [UIColor redColor],
                           [UIColor orangeColor],
@@ -57,6 +59,8 @@
     }
     return self;
 }
+
+#pragma mark - Setting Values
 
 -(double) value {
     
@@ -112,7 +116,7 @@
     return _tolerance;
 }
 
--(double) temp {
+-(double) temp {        //sets temp coefficient
     
     if (self.tempIndex == 0) {          //brown
         self.temp = 100;

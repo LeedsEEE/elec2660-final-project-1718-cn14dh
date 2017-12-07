@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "DataModel.h"
-#import "SixBandResistor.h"//MAKE ONE FOR EACH NEW VIEW
 
 @interface TableViewController : UITableViewController
 

@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Resistors-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FourBandViewController" sceneMemberID="viewController">
@@ -56,7 +56,7 @@
                             <constraint firstItem="AdD-o7-gOC" firstAttribute="top" secondItem="bBp-bN-sxU" secondAttribute="bottom" constant="10" id="zaA-rL-YUE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="odJ-v2-Xct"/>
+                    <tabBarItem key="tabBarItem" title="Resistors" image="first" id="odJ-v2-Xct"/>
                     <navigationItem key="navigationItem" id="Nfy-aw-guy"/>
                     <connections>
                         <outlet property="picker" destination="Vn4-49-x9C" id="zzB-sS-akX"/>
@@ -150,7 +150,7 @@
             </objects>
             <point key="canvasLocation" x="-1116" y="1180"/>
         </scene>
-        <!--Item-->
+        <!--Components-->
         <scene sceneID="1wV-tg-tR6">
             <objects>
                 <tableViewController id="r2Z-dY-r9m" customClass="TableViewController" sceneMemberID="viewController">
@@ -189,73 +189,14 @@
                             <outlet property="delegate" destination="r2Z-dY-r9m" id="0Lx-03-Uai"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Z5I-ZZ-gcU"/>
+                    <tabBarItem key="tabBarItem" title="Components" image="resistorTab.png" id="Z5I-ZZ-gcU"/>
                     <navigationItem key="navigationItem" id="jDD-70-GF9"/>
-                    <connections>
-                        <segue destination="HCu-mi-g96" kind="show" identifier="resistor" id="weT-MB-MTp"/>
-                        <segue destination="mnx-wn-EQN" kind="show" id="vpo-tC-IPa"/>
-                        <segue destination="veU-te-Xdm" kind="show" id="WHr-Q9-zZG"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZR-U2-eHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2836" y="365"/>
         </scene>
-        <!--Resistor-->
-        <scene sceneID="SaH-pU-FUX">
-            <objects>
-                <viewController title="Resistor" id="HCu-mi-g96" customClass="resistor" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aGv-m5-vNu"/>
-                        <viewControllerLayoutGuide type="bottom" id="8yw-bP-1nZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aP4-Jc-czd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pyo-ee-lmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3646" y="365"/>
-        </scene>
-        <!--Capacitor-->
-        <scene sceneID="IFK-kw-FBI">
-            <objects>
-                <viewController title="Capacitor" id="mnx-wn-EQN" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3ay-7i-UR4"/>
-                        <viewControllerLayoutGuide type="bottom" id="VWp-jq-0VU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Vjo-mM-Izh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ptg-mJ-UI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2836" y="1180"/>
-        </scene>
-        <!--Inductor-->
-        <scene sceneID="OJD-u7-I3T">
-            <objects>
-                <viewController title="Inductor" id="veU-te-Xdm" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2Wt-nn-XQa"/>
-                        <viewControllerLayoutGuide type="bottom" id="zVv-4R-4JF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KA5-Oe-ZAi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cnu-QX-xo6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3646" y="1180"/>
-        </scene>
-        <!--Second-->
+        <!--Op-Amps-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="NonInOpAmpViewController" sceneMemberID="viewController">
@@ -375,7 +316,7 @@
                             <constraint firstItem="ELo-OD-K5P" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="yyn-TO-EAs"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Op-Amps" image="second" id="cPa-gy-q4n"/>
                     <navigationItem key="navigationItem" id="EK4-AL-iyk"/>
                     <connections>
                         <outlet property="AvInput" destination="f3b-IG-ZTF" id="qR5-iQ-1nm"/>
@@ -522,11 +463,11 @@
             </objects>
             <point key="canvasLocation" x="1800.8" y="364.7676161919041"/>
         </scene>
-        <!--Formulae-->
+        <!--Components-->
         <scene sceneID="WTp-DU-a4h">
             <objects>
                 <navigationController id="Jr1-9F-9rW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Formulae" image="third" id="CvD-hp-kvL"/>
+                    <tabBarItem key="tabBarItem" title="Components" image="resistorTab.png" id="CvD-hp-kvL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mbk-MB-PG5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -652,13 +593,13 @@
         <image name="Inverting.png" width="705" height="414"/>
         <image name="first" width="30" height="30"/>
         <image name="nonInverting.png" width="570" height="445"/>
+        <image name="resistorTab.png" width="75" height="75"/>
         <image name="second" width="30" height="30"/>
-        <image name="third" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nQP-kI-rh8"/>
+        <segue reference="j0C-zZ-qIU"/>
+        <segue reference="Lgn-XM-avh"/>
         <segue reference="aHo-ci-X7s"/>
-        <segue reference="xnh-6D-azH"/>
         <segue reference="TT7-yb-EEA"/>
     </inferredMetricsTieBreakers>
 </document>

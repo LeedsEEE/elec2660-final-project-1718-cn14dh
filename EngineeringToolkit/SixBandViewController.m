@@ -21,7 +21,7 @@
     self.picker.delegate = self;
     self.picker.dataSource =self;
     
-    self.resistor = [[SixBandResistor alloc] init];        //setting the resistor to 1k and printing the value
+    self.resistor = [[SixBandResistor alloc] init];        
     
     /*  self.resistor.firstSignificantFigure = 1;
      self.resistor.secondSignificantFigure = 0;
@@ -37,7 +37,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark Picker View Delegate Methods
+#pragma mark - Picker View Delegate Methods
 
 /* - (NSString *)pickerView:(UIPickerView *)pickerView
  titleForRow:(NSInteger)row
@@ -54,14 +54,14 @@
           forComponent:(NSInteger)component
            reusingView:(UIView *)view{
     
-    UIView *band = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
+    UIView *band = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];             //setting the dimensions for the colour bands in the picker
     
     if (component == 4){
-        band.backgroundColor = [self.resistor.toleranceColorArray objectAtIndex:row];
+        band.backgroundColor = [self.resistor.toleranceColorArray objectAtIndex:row];   //if 5th column in picker the options are the tolerance array
     } else if (component == 5) {
-        band.backgroundColor = [self.resistor.tempArray objectAtIndex:row];
+        band.backgroundColor = [self.resistor.tempArray objectAtIndex:row];             //if 6th column in picker the options are the temp array
     } else {
-        band.backgroundColor = [self.resistor.bandColorArray objectAtIndex:row];
+        band.backgroundColor = [self.resistor.bandColorArray objectAtIndex:row];        //otherwise the colours are from the colour band array
     }
     
     return band;
@@ -74,23 +74,23 @@
     
     self.resistor.firstSignificantFigure = [self.picker selectedRowInComponent:0];
     self.resistor.secondSignificantFigure = [self.picker selectedRowInComponent:1];
-    self.resistor.thirdSignificantFigure = [self.picker selectedRowInComponent:2];
+    self.resistor.thirdSignificantFigure = [self.picker selectedRowInComponent:2]; //define 3rd picker value as third sig fig
     self.resistor.multiplierIndex = [self.picker selectedRowInComponent:3];
     self.resistor.toleranceIndex = [self.picker selectedRowInComponent:4];
-    self.resistor.tempIndex = [self.picker selectedRowInComponent:5];
+    self.resistor.tempIndex = [self.picker selectedRowInComponent:5];       //now have added temp value to add
     
     //NSLog(@"Resistor Value = %f", self.resistor.value);
     
     self.resistorvalue.text = [NSString stringWithFormat:@"Resistor Value: %.2f Ω", self.resistor.value];
     self.tolerancevalue.text = [NSString stringWithFormat:@"Tolerance: %.2f %%", self.resistor.tolerance];
-    self.tempcoeffvalue.text = [NSString stringWithFormat:@"Temp Coefficient: %.2f °C", self.resistor.temp];
+    self.tempcoeffvalue.text = [NSString stringWithFormat:@"Temp Coefficient: %.2f °C", self.resistor.temp]; //display new temp value in new label
 }
 
-#pragma mark Picker View Data Source Methods
+#pragma mark - Picker View Data Source Methods
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     
-    return 6;
+    return 6; //number of picker selecions increased with new values
     
 }
 
@@ -116,10 +116,11 @@ numberOfRowsInComponent:(NSInteger)component{
     
 }
 
-    
+#pragma mark - Segue Between Resistors
+
 - (IBAction)swapPage:(id)sender {
     UISegmentedControl *seg = sender;
-    if (seg.selectedSegmentIndex == 0)
+    if (seg.selectedSegmentIndex == 0)          //https://stackoverflow.com/questions/8728968/how-do-i-segue-to-2-views-based-on-a-segmented-control-and-an-add-button
         [self performSegueWithIdentifier:@"sixtofour" sender:self];
     else if (seg.selectedSegmentIndex == 1)
         [self performSegueWithIdentifier:@"sixtofive" sender:self];
